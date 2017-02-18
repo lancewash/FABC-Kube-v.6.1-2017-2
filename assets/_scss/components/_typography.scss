@@ -112,9 +112,9 @@ dd {
 
 // Block
 p, blockquote, hr, pre, ol, ul, dl, table, fieldset, figure, address, form {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	margin-bottom: $paragraph-margin-bottom;
-	line-height: 30px;
+	line-height: $ui-line-height;
 }
 hr {
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -218,7 +218,7 @@ article {
 		
 		&:after {
 			background: $color-tertiary;
-			bottom: -3.35rem;
+			bottom: -3.55rem;
 			content: "";
 			height: 3px;
 			left: 0;

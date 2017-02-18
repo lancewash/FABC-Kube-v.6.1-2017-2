@@ -459,9 +459,9 @@ section {
   transition: all 1s ease-in-out; }
 
 .banner-wrap {
-  background: url("../img/fabc-banner-1.jpg");
+  background: url("../img/fabc-banner-02-overlay.jpg");
   background-size: cover;
-  height: calc( 80vh - 110px);
+  height: calc(80vh - 110px);
   margin-top: 110px;
   position: relative;
   width: 80%; }
@@ -491,7 +491,7 @@ section {
 
 .event-block {
   background: #fff;
-  bottom: 2.5rem;
+  bottom: 0;
   height: auto;
   max-height: 450px;
   min-height: 360px;
@@ -516,21 +516,45 @@ section {
       position: absolute;
       width: 3rem; }
   .event-block li {
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
     .event-block li a {
       display: inline-block;
       font-family: "playfair_displaybold";
       font-size: 1.5rem; }
     .event-block li span {
       display: block;
-      font-size: 14px; }
+      font-size: 17px; }
 
 .news-link {
-  margin: 0 0 3rem;
+  margin: 0 0 5rem;
   padding: 0; }
+  .news-link span {
+    font-style: italic;
+    position: relative; }
+    .news-link span:after {
+      background: rgba(0, 0, 0, 0.2);
+      bottom: -10px;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 2.5rem; }
+
+.pastor p {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 28px; }
+
+.pastor img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .pastor-img {
   margin-bottom: 3rem; }
+
+.sermon-player {
+  background: url("../img/fabc-banner-01-fade.jpg"); }
 
 a {
   color: #C44427;
@@ -555,27 +579,27 @@ h1.title {
 
 h1,
 .h1 {
-  font-size: 48px;
-  line-height: 52px; }
+  font-size: 52px;
+  line-height: 56px; }
 
 h2,
 .h2 {
-  font-size: 36px;
-  line-height: 40px; }
+  font-size: 42px;
+  line-height: 50px; }
 
 h3,
 .h3 {
-  font-size: 24px;
-  line-height: 32px; }
+  font-size: 30px;
+  line-height: 40px; }
 
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 24px; }
 
 h5,
 .h5 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px; }
 
 h6,
@@ -669,9 +693,9 @@ dd {
   margin-left: 24px; }
 
 p, blockquote, hr, pre, ol, ul, dl, table, fieldset, figure, address, form {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 16px;
-  line-height: 30px; }
+  line-height: 38px; }
 
 hr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -767,7 +791,7 @@ article h2 {
   position: relative; }
   article h2:after {
     background: #C44427;
-    bottom: -3.35rem;
+    bottom: -3.55rem;
     content: "";
     height: 3px;
     left: 0;
@@ -821,7 +845,7 @@ article.article-wrap h2:after {
 .container {
   background: #fff;
   box-sizing: border-box;
-  max-width: 132rem;
+  max-width: 140rem;
   margin-left: auto;
   margin-right: auto; }
 
@@ -834,6 +858,9 @@ article.article-wrap h2:after {
   flex-wrap: wrap;
   position: relative;
   z-index: 1; }
+  .row.space {
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
 
 .row.centered {
   -ms-flex-pack: center;
@@ -887,12 +914,12 @@ article.article-wrap h2:after {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -webkit-flex-basis: 0;
-  -ms-flex-basis: 0;
+  -webkit-flex-basis: auto;
+  -ms-flex-basis: auto;
   -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  max-width: 100%;
-  padding: 4rem 5rem; }
+  flex-basis: auto;
+  width: 100%;
+  padding: 2rem; }
   .column.no-pad {
     padding: 0; }
 
@@ -930,110 +957,26 @@ article.article-wrap h2:after {
 .pull-right {
   margin-left: auto; }
 
-.one {
-  -webkit-flex-basis: 6.25%;
-  -ms-flex-preferred-size: 6.25%;
-  flex-basis: 6.25%;
-  max-width: 6.25%;
-  width: 6.25%; }
-
-.two {
-  -webkit-flex-basis: 12.5%;
-  -ms-flex-preferred-size: 12.5%;
-  flex-basis: 12.5%;
-  max-width: 12.5%;
-  width: 12.5%; }
-
-.three {
-  -webkit-flex-basis: 18.75%;
-  -ms-flex-preferred-size: 18.75%;
-  flex-basis: 18.75%;
-  max-width: 18.75%;
-  width: 18.75%; }
-
-.four {
-  -webkit-flex-basis: 25%;
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
-  max-width: 25%;
-  width: 25%; }
-
-.five {
-  -webkit-flex-basis: 31.25%;
-  -ms-flex-preferred-size: 31.25%;
-  flex-basis: 31.25%;
-  max-width: 31.25%;
-  width: 31.25%; }
-
-.six {
-  -webkit-flex-basis: 37.5%;
-  -ms-flex-preferred-size: 37.5%;
-  flex-basis: 37.5%;
-  max-width: 37.5%;
-  width: 37.5%; }
-
-.seven {
-  -webkit-flex-basis: 43.75%;
-  -ms-flex-preferred-size: 43.75%;
-  flex-basis: 43.75%;
-  max-width: 43.75%;
-  width: 43.75%; }
-
-.eight {
-  -webkit-flex-basis: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  max-width: 50%;
-  width: 50%; }
-
-.nine {
-  -webkit-flex-basis: 56.25%;
-  -ms-flex-preferred-size: 56.25%;
-  flex-basis: 56.25%;
-  max-width: 56.25%;
-  width: 56.25%; }
-
-.ten {
-  -webkit-flex-basis: 62.5%;
-  -ms-flex-preferred-size: 62.5%;
-  flex-basis: 62.5%;
-  max-width: 62.5%;
-  width: 62.5%; }
-
-.eleven {
-  -webkit-flex-basis: 68.75%;
-  -ms-flex-preferred-size: 68.75%;
-  flex-basis: 68.75%;
-  max-width: 68.75%;
-  width: 68.75%; }
-
-.twelve {
-  -webkit-flex-basis: 75%;
-  -ms-flex-preferred-size: 75%;
-  flex-basis: 75%;
-  max-width: 75%;
-  width: 75%; }
-
-.thirteen {
-  -webkit-flex-basis: 81.25%;
-  -ms-flex-preferred-size: 81.25%;
-  flex-basis: 81.25%;
-  max-width: 81.25%;
-  width: 81.25%; }
-
-.fourteen {
-  -webkit-flex-basis: 87.5%;
-  -ms-flex-preferred-size: 87.5%;
-  flex-basis: 87.5%;
-  max-width: 87.5%;
-  width: 87.5%; }
-
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.thirteen,
+.fourteen,
 .fifteen {
-  -webkit-flex-basis: 93.75%;
-  -ms-flex-preferred-size: 93.75%;
-  flex-basis: 93.75%;
-  max-width: 93.75%;
-  width: 93.75%; }
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  width: 100%; }
 
 .sixteen {
   -webkit-flex-basis: 100%;
@@ -2505,14 +2448,14 @@ button:hover .menu-icon {
     top: 40px; }
 
 .cd-auto-hide-header .logo-small .fabc-logo {
-  background: url("../img/fabc-logo-small.png") no-repeat;
+  background: url("../img/fabc-logo-small.png") no-repeat 0 10px;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
-  height: 80px;
+  height: 100px;
   left: 0;
-  margin: -15px 0 0 1px;
+  margin: -5px 0 0 1px;
   width: 260px;
-  top: 14px; }
+  top: 4px; }
 
 .cd-auto-hide-header.is-hidden .fabc-logo {
   background: url("../img/fabc-logo-small.png") no-repeat;
@@ -2533,10 +2476,10 @@ button:hover .menu-icon {
 
 @media only screen and (min-width: 1200px) {
   .cd-auto-hide-header {
-    height: 40px;
+    height: 44px;
     left: auto;
     right: auto;
-    max-width: 132rem; } }
+    max-width: 140rem; } }
 
 .cd-auto-hide-header .logo,
 .cd-auto-hide-header .nav-trigger {
@@ -2690,7 +2633,6 @@ button:hover .menu-icon {
     margin-right: 0; }
   .cd-primary-nav > ul a {
     /* reset mobile style */
-    background: #ccc;
     height: auto;
     line-height: normal;
     padding: 10px 20px;
@@ -2778,7 +2720,7 @@ button:hover .menu-icon {
   display: block;
   color: #ffffff;
   line-height: 50px;
-  padding: 0 2rem; }
+  padding: 11px 40px; }
 
 .cd-secondary-nav .fabc-logo a {
   color: transparent;
@@ -2807,7 +2749,11 @@ button:hover .menu-icon {
     -ms-flex-negative: 1;
     flex-shrink: 1; }
   .cd-secondary-nav a {
-    line-height: 78px; }
+    line-height: 55px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800; }
   .cd-secondary-nav a.active {
     box-shadow: inset 0 -3px #8F3985; } }
 
@@ -2905,9 +2851,9 @@ section {
   transition: all 1s ease-in-out; }
 
 .banner-wrap {
-  background: url("../img/fabc-banner-1.jpg");
+  background: url("../img/fabc-banner-02-overlay.jpg");
   background-size: cover;
-  height: calc( 80vh - 110px);
+  height: calc(80vh - 110px);
   margin-top: 110px;
   position: relative;
   width: 80%; }
@@ -2937,7 +2883,7 @@ section {
 
 .event-block {
   background: #fff;
-  bottom: 2.5rem;
+  bottom: 0;
   height: auto;
   max-height: 450px;
   min-height: 360px;
@@ -2962,21 +2908,45 @@ section {
       position: absolute;
       width: 3rem; }
   .event-block li {
-    margin-bottom: 1rem; }
+    margin-bottom: 2rem; }
     .event-block li a {
       display: inline-block;
       font-family: "playfair_displaybold";
       font-size: 1.5rem; }
     .event-block li span {
       display: block;
-      font-size: 14px; }
+      font-size: 17px; }
 
 .news-link {
-  margin: 0 0 3rem;
+  margin: 0 0 5rem;
   padding: 0; }
+  .news-link span {
+    font-style: italic;
+    position: relative; }
+    .news-link span:after {
+      background: rgba(0, 0, 0, 0.2);
+      bottom: -10px;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 2.5rem; }
+
+.pastor p {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 28px; }
+
+.pastor img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .pastor-img {
   margin-bottom: 3rem; }
+
+.sermon-player {
+  background: url("../img/fabc-banner-01-fade.jpg"); }
 
 .intro {
   background: #fff;
@@ -2997,7 +2967,7 @@ section {
 .scroll .intro {
   background: white;
   opacity: 1;
-  padding: 3rem 0 8rem; }
+  padding: 0 0 4rem; }
 
 .scroll .event-block {
   right: -48%; }
@@ -3026,24 +2996,24 @@ section {
 .nav-sidebar {
   position: absolute;
   background-color: white;
-  right: -40px;
+  right: -50px;
   top: 0;
   bottom: 0;
   height: 100vh;
-  width: 40px;
+  width: 50px;
   z-index: 2000;
   transition: all .5s ease-in-out; }
 
-.nav-wrap-primary:hover .nav-sidebar {
-  right: 0; }
+.cd-primary-nav:hover .nav-sidebar {
+  right: -10px; }
 
 .body-overlay:hover .nav-sidebar:not(".nav-wrap-primary") {
-  right: -40px !important; }
+  right: -10px !important; }
 
 .body-overlay {
   position: fixed;
   z-index: -100;
-  top: 40px;
+  top: 42px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -3062,7 +3032,7 @@ section {
 .cd-primary-nav:hover .body-overlay {
   position: fixed;
   z-index: 100;
-  top: 40px;
+  top: 42px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -3080,3 +3050,172 @@ section {
 .body-overlay:hover {
   visibility: hidden !important;
   opacity: 0 !important; }
+
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+
+.hamburger:hover {
+  opacity: 0.7; }
+
+.hamburger-box {
+  width: 30px;
+  height: 18px;
+  margin-top: 8px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease; }
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block; }
+
+.hamburger-inner::before {
+  top: -6px; }
+
+.hamburger-inner::after {
+  bottom: -6px; }
+
+button {
+  outline: none; }
+
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.1s 0.14s ease, opacity 0.1s ease; }
+
+.hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.1s 0.14s ease, -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--squeeze.is-active .hamburger-inner {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition-delay: 0.14s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.hamburger--squeeze.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease, opacity 0.1s 0.14s ease; }
+
+.hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease, -webkit-transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent; }
+
+#player_iframe {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); }
+
+.sermon-player h2 {
+  color: rgba(255, 255, 255, 0.9);
+  position: relative; }
+  .sermon-player h2:after {
+    background: rgba(255, 255, 255, 0.5) !important;
+    bottom: -3.45rem;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 3rem; }
+
+.sermon-player p {
+  color: rgba(255, 255, 255, 0.8); }
+
+.sermon-player .six {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  left: -775px;
+  transition: all 1s ease-in-out; }
+
+.sermon-player .six.scroll {
+  left: 0; }
+
+/*
+================== Media Query Breakpoints =================
+*/
+/*******************************
+********* Breakpoints **********
+
+       xsmall-:   0
+        small-:   30rem  (480px)
+       medium-:   40rem  (640px)
+        large-:   64rem  (1024px)
+       xlarge-:   75rem  (1280px)
+      xxlarge-:   90rem  (1440px)
+     xxxlarge-:   105rem (1680px)
+
+    // xlarge: "(max-width: 1680px)"
+    // large:  "(max-width: 1280px)"
+    // medium: "(max-width: 980px)"
+    // small:  "(max-width: 736px)"
+    // xsmall: "(max-width: 480px)"
+
+********* Breakpoints *********
+*******************************/
+@media only screen and (max-height: 740px) {
+  .news-link {
+    margin-bottom: 2rem;
+    padding-bottom: 0; } }
+
+@media only screen and (max-height: 844px) {
+  .event-block {
+    max-height: 480px;
+    min-height: 400px;
+    top: 1rem;
+    padding: 3rem 4rem 0 4rem; }
+  .welcome h1 {
+    padding-top: 2rem; } }
+
+@media only screen and (min-height: 845px) {
+  .event-block {
+    padding: 4rem 4rem 5rem 5rem;
+    top: .75rem; } }
+
+@media only screen and (min-height: 924px) {
+  .event-block {
+    padding: 4rem 4rem 5rem 5rem;
+    top: 2.25rem;
+    bottom: 1rem; } }

@@ -4,9 +4,9 @@ section {
 }
 
 .banner-wrap {
-  background: url("../img/fabc-banner-1.jpg");
+  background: url("../img/fabc-banner-02-overlay.jpg");
   background-size: cover;
-  height: calc( 80vh - 110px );
+  height: calc(80vh - 110px);
   margin-top: 110px;
   position: relative;
   width: 80%;
@@ -48,15 +48,13 @@ section {
   }
 }
 
-
-
 .intro {
   padding-top: 3.5rem;
 }
 
 .event-block {
   background: #fff;
-  bottom: 2.5rem;
+  bottom: 0;
   height: auto;
   max-height: 450px;
   min-height: 360px;
@@ -87,26 +85,60 @@ section {
   }
 
   li {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     a {
       display: inline-block;
       font-family: $heading-font-family;
       font-size: 1.5rem;
     }
-    
+
     span {
       display: block;
-      font-size: $font-size-small;
+      font-size: $font-size-small + 3px;
     }
   }
 }
 
 .news-link {
-  margin: 0 0 3rem;
+  margin: 0 0 5rem;
   padding: 0;
+  
+  span {
+    font-style: italic;
+    position: relative;
+
+    &:after {
+      background: rgba(0,0,0,.2);
+      bottom: -10px;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 2.5rem;
+    }
+  }
+}
+
+.pastor {
+  p {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 28px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .pastor-img {
   margin-bottom: 3rem;
+}
+
+.sermon-player {
+  background: url("../img/fabc-banner-01-fade.jpg");
+  //background: darken(#004462, 5%);
 }

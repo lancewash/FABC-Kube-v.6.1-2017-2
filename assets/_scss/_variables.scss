@@ -20,7 +20,9 @@ $grid-width: 1128 !default; // pixels
 $grid-gutter: $base-line !default;
 $grid-gutter-integer: ($grid-gutter / ($grid-gutter * 0 + 1)) !default;
 $grid-gap: ($grid-gutter-integer / ($grid-width / 100)) * 1% !default;
-$max-width: 132rem;
+$max-width: 140rem;
+
+
 // Z Indexes
 $z-over-content: 100 !default;
 $z-over-control: 200 !default;
@@ -42,17 +44,17 @@ $ui-font-size-big: $font-size-big !default;
 
 // Headings
 $title-font-size: 60px !default;
-$h1-font-size: 48px !default;
-$h2-font-size: 36px !default;
-$h3-font-size: 24px !default;
-$h4-font-size: 18px !default;
-$h5-font-size: 16px !default;
+$h1-font-size: 52px !default;
+$h2-font-size: 42px !default;
+$h3-font-size: 30px !default;
+$h4-font-size: 24px !default;
+$h5-font-size: 20px !default;
 $h6-font-size: 12px !default;
 
 $title-line-height: 64px !default;
-$h1-line-height: 52px !default;
-$h2-line-height: 40px !default;
-$h3-line-height: 32px !default;
+$h1-line-height: 56px !default;
+$h2-line-height: 50px !default;
+$h3-line-height: 40px !default;
 $h4-line-height: $base-line !default;
 $h5-line-height: $base-line !default;
 $h6-line-height: 20px !default;

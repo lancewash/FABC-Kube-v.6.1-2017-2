@@ -2,33 +2,32 @@
 .nav-sidebar {
   position: absolute;
   background-color: rgba(255,255,255,1);
-  right: -40px;
+  right: -50px;
   top: 0;
   bottom: 0;
   height: 100vh;
-  width: 40px;
+  width: 50px;
   z-index: 2000;
   //box-shadow: 0 0 18px rgba(0,0,0,.35);
   transition: all .5s ease-in-out;
-
   //&:hover {
   //  right:0;
   //}
 }
 
-.nav-wrap-primary:hover .nav-sidebar {
-  right:0;
+.cd-primary-nav:hover .nav-sidebar {
+  right: -10px;
 }
 
 .body-overlay:hover .nav-sidebar:not(".nav-wrap-primary") {
-  right: -40px !important;
+  right: -10px !important;
 }
 
 .body-overlay {
 
   position: fixed;
   z-index: -100;
-  top: 40px;
+  top: 42px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -47,13 +46,11 @@
 }
 
 
-
-
  .cd-primary-nav:hover .body-overlay  {
 
    position: fixed;
    z-index: 100;
-   top: 40px;
+   top: 42px;
    left: 0;
    right: 0;
    bottom: 0;

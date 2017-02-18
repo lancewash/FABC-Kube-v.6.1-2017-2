@@ -13,7 +13,6 @@
 </head>
 <body>
 <div class="page-wrap">
-
     <div class="container">
         <header class="cd-auto-hide-header">
             <div class="nav-wrap nav-wrap-primary">
@@ -40,7 +39,7 @@
                         <li><a href="#0">Sermons</a></li>
                         <li><a href="#0">ACS Online Giving</a></li>
                     </ul>
-                    <a href="#" style="background: #ccc;padding: 10px 30px; line-height: 40px;">Site Map</a>
+                    <a href="#" style="padding: 10px 30px; line-height: 44px;">Site Map</a>
                 </nav> <!-- .cd-primary-nav -->
             </div>
             <nav role="navigation" class="cd-secondary-nav">
@@ -105,15 +104,16 @@
             </div>&ndash;&gt;
         </section>-->
         <section class="intro">
-            <div class="row">
+            <div class="row space">
                 <!--<div class="three offset-two column" style="padding:0 3rem;">
                     <h2>The Pastor and First Lady</h2>
                 </div>-->
-                <div class="two offset-two pastor" style="margin-top: -10em;">
+                <div class="two offset-one pastor" style="margin-top: -14.25em;">
                     <img id="pastor-img" src="assets/img/pastor-mrs-dent.png" alt="">
-                    <p><strong>Rev. Dr. Richard A. Dent and Mrs. Dent</strong></p>
+                    <p><strong>Rev. Dr. Richard A. Dent<br>
+                        and Mrs. Dent</strong></p>
                 </div>
-                <div class="eight column" style="padding:0 3rem; text-align: center;">
+                <div class="eight offset-one column" style="padding:0 3rem; text-align: center;">
                     <p>I am very pleased that you decided to visit the website of First African Baptist Church of
                         Sharon Hill, PA. First African is a family-oriented church for all of the Lord’s children
                         regardless of race, color, creed, or circumstance. If you have never experienced the JOY! of
@@ -162,8 +162,17 @@
                     </article>
                 </div>
             </div>
-            <div class="row">
+            <!--<img src="assets/img/fabc-banner-04-overlay.jpg" alt="">-->
+            <!--<div class="parallax-window" data-parallax="scroll" data-image-src="assets/img/fabc-banner-1.jpg"></div>-->
+            <!--<div class="parallax-container parallax" alt="" data-parallax="scroll" data-speed="0.3"
+                 data-image-src="assets/img/fabc-banner-1.jpg" data-natural-width="1760" data-natural-height="800"
+                 style="height: 360px;">
+                <div class="overlay-b"></div>
+
+            </div>-->
+            <div class="row space">
                 <div class="column">
+                    <h2>Header Two</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
@@ -179,12 +188,7 @@
                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
                 <div class="column">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley.
-                    </p>
-                </div>
-                <div class="column">
+                    <h2>Header Two</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
@@ -200,16 +204,59 @@
                         software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row space sermon-player">
                 <div class="six column">
                     <h2>First African Baptist Church Sermons</h2>
+                    <div class="content-wrap">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                         type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                         leap.</p>
+                    </div>
                 </div>
                 <div class="ten column">
                     <script src="https://www.buzzsprout.com/8786.js?player=large" type="text/javascript" charset="utf-8"></script>
+                </div>
+            </div>
+            <div class="row space">
+                <div class="column">
+                    <h2>Header Two</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with
+                        the
+                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="column">
+                    <h2>Header Two</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley.
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Header Two</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with
+                        the
+                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>
             </div>
         </main>
@@ -221,6 +268,7 @@
 </script>
 <script src="assets/js/nav.js"></script> <!-- Resource jQuery -->
 <script src="assets/js/kube.js"></script>
+<script src="assets/js/parallax.min.js"></script>
 <script>
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -237,6 +285,15 @@
             $(".welcome").removeClass("scroll-pos");
             $(".welcome-two").removeClass("scroll-pos");
             $("body").removeClass("scroll");
+        }
+        var scroll_2 = $(window).scrollTop();
+        //console.log(scroll);
+        if (scroll_2 >= 2000) {
+            //console.log('a');
+            $(".sermon-player .six").addClass("scroll");
+        } else {
+            //console.log('a');
+            $(".sermon-player .six").removeClass("scroll");
         }
     });
 </script>

@@ -1,0 +1,77 @@
+
+
+/*
+================== Media Query Breakpoints =================
+*/
+
+/*******************************
+********* Breakpoints **********
+
+       xsmall-:   0
+        small-:   30rem  (480px)
+       medium-:   40rem  (640px)
+        large-:   64rem  (1024px)
+       xlarge-:   75rem  (1280px)
+      xxlarge-:   90rem  (1440px)
+     xxxlarge-:   105rem (1680px)
+
+    // xlarge: "(max-width: 1680px)"
+    // large:  "(max-width: 1280px)"
+    // medium: "(max-width: 980px)"
+    // small:  "(max-width: 736px)"
+    // xsmall: "(max-width: 480px)"
+
+********* Breakpoints *********
+*******************************/
+
+$breakpoint-small: 30rem;
+@media (min-width: $breakpoint-small) {
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-height: 740px) {
+
+  .news-link {
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+  }
+}
+
+
+
+@media only screen and (max-height: 844px) {
+
+  .event-block {
+    max-height: 480px;
+    min-height: 400px;
+    top: 1rem;
+    padding: 3rem 4rem 0 4rem;
+  }
+  .welcome h1 {
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (min-height: 845px) {
+
+  .event-block {
+    padding: 4rem 4rem 5rem 5rem;
+    top: .75rem;
+  }
+}
+
+@media only screen and (min-height: 924px) {
+
+  .event-block {
+    padding: 4rem 4rem 5rem 5rem;
+    top: 2.25rem;
+    bottom: 1rem;
+  }
+}
