@@ -4,7 +4,8 @@ section {
 }
 
 .banner-wrap {
-  background: url("../img/fabc-banner-02-overlay.jpg");
+  //background: url("../img/fabc-banner-02-overlay.jpg");
+  background: url("../img/fabc-banner-02-overlay-hover.jpg");
   background-size: cover;
   height: calc(80vh - 110px);
   margin-top: 110px;
@@ -12,14 +13,14 @@ section {
   width: 80%;
   transition: all 1.5s ease-in-out;
 
-  &:hover {
-    background: url("../img/fabc-banner-02-overlay-hover.jpg");
-    background-size: cover;
-    height: calc(80vh - 110px);
-    margin-top: 110px;
-    position: relative;
-    width: 80%;
-  }
+  //&:hover {
+  //  background: url("../img/fabc-banner-02-overlay-hover.jpg");
+  //  background-size: cover;
+  //  height: calc(80vh - 110px);
+  //  margin-top: 110px;
+  //  position: relative;
+  //  width: 80%;
+  //}
 }
 
 //#welcome-head {

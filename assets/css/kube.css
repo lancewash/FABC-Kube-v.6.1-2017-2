@@ -513,20 +513,13 @@ section {
   transition: all 1.5s ease-in-out; }
 
 .banner-wrap {
-  background: url("../img/fabc-banner-02-overlay.jpg");
+  background: url("../img/fabc-banner-02-overlay-hover.jpg");
   background-size: cover;
   height: calc(80vh - 110px);
   margin-top: 110px;
   position: relative;
   width: 80%;
   transition: all 1.5s ease-in-out; }
-  .banner-wrap:hover {
-    background: url("../img/fabc-banner-02-overlay-hover.jpg");
-    background-size: cover;
-    height: calc(80vh - 110px);
-    margin-top: 110px;
-    position: relative;
-    width: 80%; }
 
 .welcome {
   font-size: 4rem;
@@ -3032,20 +3025,13 @@ section {
   transition: all 1.5s ease-in-out; }
 
 .banner-wrap {
-  background: url("../img/fabc-banner-02-overlay.jpg");
+  background: url("../img/fabc-banner-02-overlay-hover.jpg");
   background-size: cover;
   height: calc(80vh - 110px);
   margin-top: 110px;
   position: relative;
   width: 80%;
   transition: all 1.5s ease-in-out; }
-  .banner-wrap:hover {
-    background: url("../img/fabc-banner-02-overlay-hover.jpg");
-    background-size: cover;
-    height: calc(80vh - 110px);
-    margin-top: 110px;
-    position: relative;
-    width: 80%; }
 
 .welcome {
   font-size: 4rem;
@@ -3242,6 +3228,14 @@ section {
 .body-overlay:hover {
   visibility: hidden !important;
   opacity: 0 !important; }
+
+.gradient-overlay {
+  background: url("../img/gradient-overlay.png") 0 0 repeat-x;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%; }
 
 .hamburger {
   padding: 15px 15px;
