@@ -1,6 +1,6 @@
 
 section {
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .banner-wrap {
@@ -10,6 +10,16 @@ section {
   margin-top: 110px;
   position: relative;
   width: 80%;
+  transition: all 1.5s ease-in-out;
+
+  &:hover {
+    background: url("../img/fabc-banner-02-overlay-hover.jpg");
+    background-size: cover;
+    height: calc(80vh - 110px);
+    margin-top: 110px;
+    position: relative;
+    width: 80%;
+  }
 }
 
 //#welcome-head {

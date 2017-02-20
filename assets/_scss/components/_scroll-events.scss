@@ -24,7 +24,12 @@
 
   .intro {
     //background: #99351f;
-    background: rgba(255,255,255,1);
+    //background: rgba(255,255,255,1);
+    background: #081F27;
+    @include breakpoint(large) {
+      background: #fff;
+    }
+    //background: #004462;
     //background: -moz-linear-gradient(top, transparent 0%, rgba(246,246,246,1) 0%, rgba(153,54,31,1) 100%);
     //background: -webkit-gradient(left top, left bottom, color-stop(0%, transparent), color-stop(0%, rgba(246,246,246,1)), color-stop(100%, rgba(153,54,31,1)));
     //background: -webkit-linear-gradient(top, transparent 0%, rgba(246,246,246,1) 0%, rgba(153,54,31,1) 100%);
@@ -45,7 +50,7 @@
   .event-block {
     //min-width: 250px;
     //opacity: 0;
-    right: -48%;
+    right: -50%;
     //width: 0;
   }
   .pastor {

@@ -376,6 +376,60 @@ body {
   animation-name: rotate; }
 
 /*
+================== Media Query Breakpoints =================
+*/
+/*******************************
+********* Breakpoints **********
+
+       xsmall-:   0
+        small-:   30rem  (480px)
+       medium-:   40rem  (640px)
+        large-:   64rem  (1024px)
+       xlarge-:   75rem  (1280px)
+      xxlarge-:   90rem  (1440px)
+     xxxlarge-:   105rem (1680px)
+
+    // xlarge: "(max-width: 1680px)"
+    // large:  "(max-width: 1280px)"
+    // medium: "(max-width: 980px)"
+    // small:  "(max-width: 736px)"
+    // xsmall: "(max-width: 480px)"
+
+********* Breakpoints *********
+*******************************/
+/*********************
+BREAKPOINTS
+*********************/
+@media only screen and (max-height: 740px) {
+  .news-link {
+    top: 5px;
+    margin-bottom: 2rem;
+    padding-bottom: 0; } }
+
+@media only screen and (max-height: 844px) {
+  .event-block {
+    max-height: 480px;
+    min-height: 400px;
+    top: 15px;
+    padding: 3rem 4rem 0 4rem; }
+  .welcome h1 {
+    padding-top: 2rem; } }
+
+@media only screen and (min-height: 845px) {
+  .event-block {
+    padding: 4rem 4rem 5rem 5rem;
+    top: 18px;
+    bottom: 5px; } }
+
+@media only screen and (min-height: 924px) {
+  .event-block {
+    max-height: 500px;
+    min-height: 360px;
+    padding: 4rem 4rem 5rem 5rem;
+    top: 50px;
+    bottom: 40px; } }
+
+/*
 =======================================================================
 ================================ Fonts ================================
 =======================================================================
@@ -456,7 +510,7 @@ body::-webkit-scrollbar-thumb {
   list-style: none; }
 
 section {
-  transition: all 1s ease-in-out; }
+  transition: all 1.5s ease-in-out; }
 
 .banner-wrap {
   background: url("../img/fabc-banner-02-overlay.jpg");
@@ -464,7 +518,15 @@ section {
   height: calc(80vh - 110px);
   margin-top: 110px;
   position: relative;
-  width: 80%; }
+  width: 80%;
+  transition: all 1.5s ease-in-out; }
+  .banner-wrap:hover {
+    background: url("../img/fabc-banner-02-overlay-hover.jpg");
+    background-size: cover;
+    height: calc(80vh - 110px);
+    margin-top: 110px;
+    position: relative;
+    width: 80%; }
 
 .welcome {
   font-size: 4rem;
@@ -985,68 +1047,187 @@ article.article-wrap h2:after {
   max-width: 100%;
   width: 100%; }
 
-.offset-one {
-  margin-left: 6.25%; }
-
-.offset-two {
-  margin-left: 12.5%; }
-
-.offset-three {
-  margin-left: 18.75%; }
-
-.offset-four {
-  margin-left: 25%; }
-
-.offset-five {
-  margin-left: 31.25%; }
-
-.offset-six {
-  margin-left: 37.5%; }
-
-.offset-seven {
-  margin-left: 43.75%; }
-
-.offset-eight {
-  margin-left: 50%; }
-
-.offset-nine {
-  margin-left: 56.25%; }
-
-.offset-ten {
-  margin-left: 62.5%; }
-
-.offset-eleven {
-  margin-left: 68.75%; }
-
-.offset-twelve {
-  margin-left: 75%; }
-
-.offset-thirteen {
-  margin-left: 81.25%; }
-
-.offset-fourteen {
-  margin-left: 87.5%; }
-
+.offset-one,
+.offset-two,
+.offset-three,
+.offset-four,
+.offset-five,
+.offset-six,
+.offset-seven,
+.offset-eight,
+.offset-nine,
+.offset-ten,
+.offset-eleven,
+.offset-twelve,
+.offset-thirteen,
+.offset-fourteen,
 .offset-fifteen {
-  margin-left: 93.75%; }
+  margin-left: 0; }
 
-.row-layout {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center; }
-
-.column-fluid {
-  -ms-flex-grow: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%; }
+@media (min-width: 64rem) {
+  .one {
+    -webkit-flex-basis: 6.25%;
+    -ms-flex-preferred-size: 6.25%;
+    flex-basis: 6.25%;
+    max-width: 6.25%;
+    width: 6.25%; }
+  .two {
+    -webkit-flex-basis: 12.5%;
+    -ms-flex-preferred-size: 12.5%;
+    flex-basis: 12.5%;
+    max-width: 12.5%;
+    width: 12.5%; }
+  .three {
+    -webkit-flex-basis: 18.75%;
+    -ms-flex-preferred-size: 18.75%;
+    flex-basis: 18.75%;
+    max-width: 18.75%;
+    width: 18.75%; }
+  .four {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
+    width: 25%; }
+  .five {
+    -webkit-flex-basis: 31.25%;
+    -ms-flex-preferred-size: 31.25%;
+    flex-basis: 31.25%;
+    max-width: 31.25%;
+    width: 31.25%; }
+  .six {
+    -webkit-flex-basis: 37.5%;
+    -ms-flex-preferred-size: 37.5%;
+    flex-basis: 37.5%;
+    max-width: 37.5%;
+    width: 37.5%; }
+  .seven {
+    -webkit-flex-basis: 43.75%;
+    -ms-flex-preferred-size: 43.75%;
+    flex-basis: 43.75%;
+    max-width: 43.75%;
+    width: 43.75%; }
+  .eight {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%;
+    width: 50%; }
+  .nine {
+    -webkit-flex-basis: 56.25%;
+    -ms-flex-preferred-size: 56.25%;
+    flex-basis: 56.25%;
+    max-width: 56.25%;
+    width: 56.25%; }
+  .ten {
+    -webkit-flex-basis: 62.5%;
+    -ms-flex-preferred-size: 62.5%;
+    flex-basis: 62.5%;
+    max-width: 62.5%;
+    width: 62.5%; }
+  .eleven {
+    -webkit-flex-basis: 68.75%;
+    -ms-flex-preferred-size: 68.75%;
+    flex-basis: 68.75%;
+    max-width: 68.75%;
+    width: 68.75%; }
+  .twelve {
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    max-width: 75%;
+    width: 75%; }
+  .thirteen {
+    -webkit-flex-basis: 81.25%;
+    -ms-flex-preferred-size: 81.25%;
+    flex-basis: 81.25%;
+    max-width: 81.25%;
+    width: 81.25%; }
+  .fourteen {
+    -webkit-flex-basis: 87.5%;
+    -ms-flex-preferred-size: 87.5%;
+    flex-basis: 87.5%;
+    max-width: 87.5%;
+    width: 87.5%; }
+  .fifteen {
+    -webkit-flex-basis: 93.75%;
+    -ms-flex-preferred-size: 93.75%;
+    flex-basis: 93.75%;
+    max-width: 93.75%;
+    width: 93.75%; }
+  .sixteen {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%; }
+  .offset-one {
+    margin-left: 6.25%; }
+  .offset-two {
+    margin-left: 12.5%; }
+  .offset-three {
+    margin-left: 18.75%; }
+  .offset-four {
+    margin-left: 25%; }
+  .offset-five {
+    margin-left: 31.25%; }
+  .offset-six {
+    margin-left: 37.5%; }
+  .offset-seven {
+    margin-left: 43.75%; }
+  .offset-eight {
+    margin-left: 50%; }
+  .offset-nine {
+    margin-left: 56.25%; }
+  .offset-ten {
+    margin-left: 62.5%; }
+  .offset-eleven {
+    margin-left: 68.75%; }
+  .offset-twelve {
+    margin-left: 75%; }
+  .offset-thirteen {
+    margin-left: 81.25%; }
+  .offset-fourteen {
+    margin-left: 87.5%; }
+  .offset-fifteen {
+    margin-left: 93.75%; }
+  .offset-sixteen {
+    margin-left: 100%; }
+  .row-layout {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+  .column {
+    -ms-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-basis: 0;
+    -ms-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    width: 100%;
+    padding-left: 2.12766%; }
+  .column.first {
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1; }
+  .column.last {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
+  .column-fluid {
+    -ms-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 100%; } }
 
 @media (max-width: 768px) {
   .row-layout {
@@ -2848,7 +3029,7 @@ Intro Section
     margin-top: 80px; } }
 
 section {
-  transition: all 1s ease-in-out; }
+  transition: all 1.5s ease-in-out; }
 
 .banner-wrap {
   background: url("../img/fabc-banner-02-overlay.jpg");
@@ -2856,7 +3037,15 @@ section {
   height: calc(80vh - 110px);
   margin-top: 110px;
   position: relative;
-  width: 80%; }
+  width: 80%;
+  transition: all 1.5s ease-in-out; }
+  .banner-wrap:hover {
+    background: url("../img/fabc-banner-02-overlay-hover.jpg");
+    background-size: cover;
+    height: calc(80vh - 110px);
+    margin-top: 110px;
+    position: relative;
+    width: 80%; }
 
 .welcome {
   font-size: 4rem;
@@ -2965,12 +3154,15 @@ section {
   width: 100% !important; }
 
 .scroll .intro {
-  background: white;
+  background: #081F27;
   opacity: 1;
   padding: 0 0 4rem; }
+  @media (min-width: 64rem) {
+    .scroll .intro {
+      background: #fff; } }
 
 .scroll .event-block {
-  right: -48%; }
+  right: -50%; }
 
 .scroll .pastor {
   opacity: 1; }
@@ -3173,49 +3365,8 @@ button {
 .sermon-player .six.scroll {
   left: 0; }
 
-/*
-================== Media Query Breakpoints =================
-*/
-/*******************************
-********* Breakpoints **********
+.inverse p, .inverse b, .inverse strong, .inverse ul, .inverse li {
+  color: #555; }
 
-       xsmall-:   0
-        small-:   30rem  (480px)
-       medium-:   40rem  (640px)
-        large-:   64rem  (1024px)
-       xlarge-:   75rem  (1280px)
-      xxlarge-:   90rem  (1440px)
-     xxxlarge-:   105rem (1680px)
-
-    // xlarge: "(max-width: 1680px)"
-    // large:  "(max-width: 1280px)"
-    // medium: "(max-width: 980px)"
-    // small:  "(max-width: 736px)"
-    // xsmall: "(max-width: 480px)"
-
-********* Breakpoints *********
-*******************************/
-@media only screen and (max-height: 740px) {
-  .news-link {
-    margin-bottom: 2rem;
-    padding-bottom: 0; } }
-
-@media only screen and (max-height: 844px) {
-  .event-block {
-    max-height: 480px;
-    min-height: 400px;
-    top: 1rem;
-    padding: 3rem 4rem 0 4rem; }
-  .welcome h1 {
-    padding-top: 2rem; } }
-
-@media only screen and (min-height: 845px) {
-  .event-block {
-    padding: 4rem 4rem 5rem 5rem;
-    top: .75rem; } }
-
-@media only screen and (min-height: 924px) {
-  .event-block {
-    padding: 4rem 4rem 5rem 5rem;
-    top: 2.25rem;
-    bottom: 1rem; } }
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #004462; }
