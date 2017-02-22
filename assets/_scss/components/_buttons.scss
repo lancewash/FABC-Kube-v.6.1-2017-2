@@ -28,6 +28,12 @@ button,
 	text-align: center;
 	text-align: left;
 	@include transition(all .3s ease-in-out);
+
+	&.inverse {
+		color: rgba(255,255,255,1);
+		border-bottom: 1px solid rgba(255,255,255,.25);
+		border-top: 1px solid rgba(255,255,255,.25);
+	}
 }
 input.button {
 	height: auto;

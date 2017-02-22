@@ -426,8 +426,8 @@ BREAKPOINTS
     max-height: 500px;
     min-height: 360px;
     padding: 4rem 4rem 5rem 5rem;
-    top: 50px;
-    bottom: 40px; } }
+    top: 60px;
+    bottom: 30px; } }
 
 /*
 =======================================================================
@@ -513,13 +513,24 @@ section {
   transition: all 1.5s ease-in-out; }
 
 .banner-wrap {
-  background: url("../img/fabc-banner-02-overlay-hover.jpg");
+  background: url("../img/banner/fabc-banner-01-bw.jpg");
   background-size: cover;
   height: calc(80vh - 110px);
   margin-top: 110px;
   position: relative;
   width: 80%;
   transition: all 1.5s ease-in-out; }
+  .banner-wrap:after {
+    background: rgba(0, 48, 64, 0.8);
+    content: "";
+    bottom: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1; }
 
 .welcome {
   font-size: 4rem;
@@ -546,17 +557,17 @@ section {
 
 .event-block {
   background: #fff;
-  bottom: 0;
+  bottom: 20px;
   height: auto;
   max-height: 450px;
-  min-height: 360px;
+  min-height: 400px;
   min-width: 400px;
   padding: 4rem 4rem 5rem 5rem;
   position: absolute;
   right: -25%;
-  top: 2.75rem;
+  top: 50px;
   width: 40%;
-  z-index: 0; }
+  z-index: 10; }
   .event-block h2 {
     font-size: 2.5rem;
     margin-top: 0;
@@ -579,6 +590,15 @@ section {
     .event-block li span {
       display: block;
       font-size: 17px; }
+
+.sermon-banner {
+  color: #fff !important;
+  font-size: 50% !important;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  padding: 3rem;
+  z-index: 10; }
 
 .news-link {
   margin: 0 0 5rem;
@@ -1206,7 +1226,7 @@ article.article-wrap h2:after {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     width: 100%;
-    padding-left: 2.12766%; }
+    padding: 4rem 6rem; }
   .column.first {
     -webkit-order: -1;
     -ms-flex-order: -1;
@@ -1568,6 +1588,11 @@ button,
   text-align: left;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
+  button.inverse,
+  .button.inverse {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.25); }
 
 input.button {
   height: auto; }
@@ -2584,7 +2609,7 @@ button:hover .menu-icon {
 
 .cd-auto-hide-header {
   position: fixed;
-  z-index: 2;
+  z-index: 20;
   top: 0;
   left: 0;
   width: 100%;
@@ -2622,14 +2647,14 @@ button:hover .menu-icon {
     top: 40px; }
 
 .cd-auto-hide-header .logo-small .fabc-logo {
-  background: url("../img/fabc-logo-small.png") no-repeat 0 10px;
+  background: url("../img/fabc-logo-small.png") no-repeat 0 0;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
-  height: 100px;
+  height: 80px;
   left: 0;
-  margin: -5px 0 0 1px;
-  width: 260px;
-  top: 4px; }
+  margin: 0;
+  top: 0;
+  width: 260px; }
 
 .cd-auto-hide-header.is-hidden .fabc-logo {
   background: url("../img/fabc-logo-small.png") no-repeat;
@@ -3025,13 +3050,24 @@ section {
   transition: all 1.5s ease-in-out; }
 
 .banner-wrap {
-  background: url("../img/fabc-banner-02-overlay-hover.jpg");
+  background: url("../img/banner/fabc-banner-01-bw.jpg");
   background-size: cover;
   height: calc(80vh - 110px);
   margin-top: 110px;
   position: relative;
   width: 80%;
   transition: all 1.5s ease-in-out; }
+  .banner-wrap:after {
+    background: rgba(0, 48, 64, 0.8);
+    content: "";
+    bottom: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1; }
 
 .welcome {
   font-size: 4rem;
@@ -3058,17 +3094,17 @@ section {
 
 .event-block {
   background: #fff;
-  bottom: 0;
+  bottom: 20px;
   height: auto;
   max-height: 450px;
-  min-height: 360px;
+  min-height: 400px;
   min-width: 400px;
   padding: 4rem 4rem 5rem 5rem;
   position: absolute;
   right: -25%;
-  top: 2.75rem;
+  top: 50px;
   width: 40%;
-  z-index: 0; }
+  z-index: 10; }
   .event-block h2 {
     font-size: 2.5rem;
     margin-top: 0;
@@ -3091,6 +3127,15 @@ section {
     .event-block li span {
       display: block;
       font-size: 17px; }
+
+.sermon-banner {
+  color: #fff !important;
+  font-size: 50% !important;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  padding: 3rem;
+  z-index: 10; }
 
 .news-link {
   margin: 0 0 5rem;
@@ -3228,14 +3273,6 @@ section {
 .body-overlay:hover {
   visibility: hidden !important;
   opacity: 0 !important; }
-
-.gradient-overlay {
-  background: url("../img/gradient-overlay.png") 0 0 repeat-x;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%; }
 
 .hamburger {
   padding: 15px 15px;
